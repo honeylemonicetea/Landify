@@ -37,7 +37,7 @@ burgerBTN.onclick = () => {
 
     if (menuWrapper.classList.contains("closed")) {
         interval = setInterval(() => {
-            menuHeight+=10
+            menuHeight+=20
             menuWrapper.style.height = `${menuHeight}px`
             console.log("hey")
             if (menuHeight > 350) {
@@ -47,7 +47,7 @@ burgerBTN.onclick = () => {
         }, 5)
     } else {
         interval = setInterval(() => {
-            menuHeight-=10
+            menuHeight-=20
             menuWrapper.style.height = `${menuHeight}px`
             console.log("hey")
             if (menuHeight < 0) {
