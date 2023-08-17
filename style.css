@@ -438,9 +438,13 @@ footer a{
 @media (max-width: 400px) {
     *{
         position: static;
+        /* max-width: 100% !important; */
     }
     h1{
         width: 100%;
+    }
+    .container{
+        max-width: 99%;
     }
     /* MENU */
     .menu-content{
@@ -496,6 +500,7 @@ footer a{
     .header-content{
         flex-direction: column;
         margin: 0;
+        width: 100%;
     }
     .header-text-box{
         padding-left: 10px;
@@ -503,6 +508,10 @@ footer a{
     .header-left button{
         display: block;
         margin: auto;
+    }
+    .header-right img{
+        width: 100%;
+
     }
     .menu-bar{
         height: fit-content;
