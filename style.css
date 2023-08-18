@@ -236,24 +236,22 @@ font-size: 24px;
     line-height: 24px;
     color: #969BAB
 }
+.stories-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
 .hubspot{
     width: 350px;
-    position: absolute;
-    left: 20%;
-    top: 34%;
 }
 .airbnb{
     width:445px ;
-    position: absolute;
-    right: 15%;
-    top: 168px;
+
 }
 .bookmyshow{
     width: 350px;
-    position: absolute;
-    right: 10%;
-    top: 540px;
-    margin-top: 32px;
+
 }
 
 
@@ -497,11 +495,12 @@ footer a{
         display: flex;
         flex-direction: column;
     }
-    .customer-stories .story{
-        position: static;
-        width: 100%;
-        margin-top: 20px;
+    .stories-container{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 5%;
     }
+    
     .story-text-box h1{
         width: 100%;
     }
@@ -672,7 +671,7 @@ footer a{
     .customer-stories{
         height: fit-content;
     }
-    .customer-stories .container{
+    .stories-container{
         display: flex;
         flex-direction: column;
     }
