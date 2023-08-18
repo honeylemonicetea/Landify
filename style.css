@@ -90,6 +90,9 @@ body{
     .left .dropdown a:hover{
         color: rgb(236, 236, 236);
     }
+    .dropdown-hidden{
+        height: 0;
+    }
 
 
 

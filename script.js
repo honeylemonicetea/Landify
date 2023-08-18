@@ -9,7 +9,7 @@ moreBtn.onclick = () => {
 
     if (dropdown.classList.contains("dropdown-hidden")) {
         interval = setInterval(() => {
-            dropdwonHeight+=1
+            dropdwonHeight+=5
             dropdown.style.height = `${dropdwonHeight}px`
             if (dropdwonHeight > 80) {
                 dropdown.classList.remove("dropdown-hidden")
@@ -18,7 +18,7 @@ moreBtn.onclick = () => {
         }, 15)
     } else {
         interval = setInterval(() => {
-            dropdwonHeight-=1
+            dropdwonHeight-=5
             dropdown.style.height = `${dropdwonHeight}px`
             console.log("hey")
             if (dropdwonHeight < 0) {
