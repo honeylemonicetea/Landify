@@ -369,9 +369,15 @@ font-size: 24px;
     justify-content: space-between;
 }
 
+.mobile-right{
+    width: 40%;
+    display: flex;
+}
+
 .mobile-right img{
-    width: 260px;
-    height: auto;
+    width: 40%;
+    height: fit-content;
+    
 }
 .get-app{
     margin-top: 48px;
@@ -381,8 +387,7 @@ font-size: 24px;
     margin-right: 12px;
 }
 #last{
-    position: relative;
-    top: 120px;
+    align-self: flex-end;
 }
 
 
