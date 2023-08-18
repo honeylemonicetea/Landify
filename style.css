@@ -69,35 +69,29 @@ body{
     position: absolute;
     right: 0;
     top: 40px;
-    height: 80px;
-    width: 50px;
     overflow: hidden;
 }
 .dropdown{
-   position: absolute;
+    height: 80px;
+    width: fit-content;
     background-color: rgb(59, 59, 59);
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    overflow: hidden;
-    transition: 2s;
-    top: 0;
-    height: 100%;
-    transition: 0.4s;
+    justify-content: space-evenly;
+    min-height: 0;
+    padding: 0 10px;
+    border-radius: 5px;
 }
     .left .dropdown a{
         margin: 0;
         color: white;
+        min-height: 0;
     }
     .left .dropdown a:hover{
         color: rgb(236, 236, 236);
     }
 
-.dropdown.dropdown-hidden{
-    top: -60px;
-    display: none;
-    transition: 2s;
-}
+
 
 
 /*HEADER CONTENT*/
@@ -242,19 +236,19 @@ font-size: 24px;
 .hubspot{
     width: 350px;
     position: absolute;
-    left: 30%;
+    left: 20%;
     top: 34%;
 }
 .airbnb{
     width:445px ;
     position: absolute;
-    right: 25%;
+    right: 15%;
     top: 168px;
 }
 .bookmyshow{
     width: 350px;
     position: absolute;
-    right: 30%;
+    right: 10%;
     top: 540px;
     margin-top: 32px;
 }
@@ -434,7 +428,127 @@ footer a{
     }
 
 
-/* MOBILE STYLES */
+/* TABLET STYLES */
+@media (max-width: 800px) {
+    *{
+        position: static;
+    }
+    h1{
+        width: 100%;
+    }
+    .container{
+        max-width: 99%;
+    }
+    .boast-text h1{
+        width: 100%;
+    }
+    /* HEADER  */
+    .header-text-box h1{
+        font-size: 3em;
+        width: 100%;
+    }
+  
+    .header-text-box{
+        padding-left: 10px;
+    }
+    .header-left button{
+        display: block;
+        margin: auto;
+    }
+    .header-right img{
+        width: 100%;
+
+    }
+    .menu-bar{
+        height: fit-content;
+    }
+    .features-text-box{
+        margin: 0
+    }
+    .logo-cloud{
+        width: 90%;
+   
+    }
+
+
+    .boast-icons{
+        flex-direction: column;
+    }
+    .features-text-box p {
+        width: 100%;
+    }
+    .features-grid{
+        gap: 0;
+        grid-template-rows:repeat(3, minmax(200px, auto));
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+    /*CUSTOMER STORIES  */
+    .customer-stories{
+        height: fit-content;
+    }
+    .customer-stories .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .customer-stories .story{
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .story-text-box h1{
+        width: 100%;
+    }
+    .back-quote{
+        left: 0;
+    }
+    .boast-text h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .boast-text{
+        margin: 20px;
+    }
+    /* headline */
+    .headline{
+        flex-direction: column;
+    }
+    .headline img{
+        width: 100%;
+    }
+    .headline-right{
+        width: 100%;
+        margin: 0;
+    }
+
+    .lightbulb{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mobile-content{
+        flex-direction: column;
+    }
+    .mobile-left{
+        width: 100%;
+    }
+    #last{
+        position: static;
+    }
+    .mobile-right{
+        display: none;
+    }
+
+
+
+    .footer{
+        flex-direction: column;
+    }
+    
+}
 @media (max-width: 400px) {
     *{
         position: static;

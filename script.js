@@ -4,7 +4,30 @@ const moreBtn = document.getElementById("more")
 const dropdown = document.querySelector(".dropdown")
 moreBtn.onclick = () => {
     console.log("heya")
-    dropdown.classList.toggle("dropdown-hidden")
+    let dropdwonHeight = dropdown.offsetHeight
+    let interval    
+
+    if (dropdown.classList.contains("dropdown-hidden")) {
+        interval = setInterval(() => {
+            dropdwonHeight+=1
+            dropdown.style.height = `${dropdwonHeight}px`
+            if (dropdwonHeight > 80) {
+                dropdown.classList.remove("dropdown-hidden")
+                clearInterval(interval)
+            }
+        }, 15)
+    } else {
+        interval = setInterval(() => {
+            dropdwonHeight-=1
+            dropdown.style.height = `${dropdwonHeight}px`
+            console.log("hey")
+            if (dropdwonHeight < 0) {
+                dropdown.classList.add("dropdown-hidden")
+                clearInterval(interval)
+            }
+        }, 15)
+    }
+
 }
 
 // YEAR
