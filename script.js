@@ -40,7 +40,11 @@ burgerBTN.onclick = () => {
             menuHeight+=20
             menuWrapper.style.height = `${menuHeight}px`
             console.log("hey")
+            
+            
             if (menuHeight > 350) {
+                burgerBTN.children[0].classList.remove("fa-bars")
+                burgerBTN.children[0].classList.add("fa-x")
                 menuWrapper.classList.remove("closed")
                 clearInterval(interval)
             }
@@ -50,7 +54,10 @@ burgerBTN.onclick = () => {
             menuHeight-=20
             menuWrapper.style.height = `${menuHeight}px`
             console.log("hey")
+            
             if (menuHeight < 0) {
+                burgerBTN.children[0].classList.remove("fa-x")
+                burgerBTN.children[0].classList.add("fa-bars")
                 menuWrapper.classList.add("closed")
                 clearInterval(interval)
             }
