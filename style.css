@@ -376,7 +376,7 @@ font-size: 24px;
 
 .mobile-right img{
     width: 40%;
-    height: fit-content;
+    height: auto
     
 }
 .get-app{
@@ -385,6 +385,9 @@ font-size: 24px;
 .get-app img{
     margin-top: 8px;
     margin-right: 12px;
+}
+#first{
+    align-self: flex-start;
 }
 #last{
     align-self: flex-end;
